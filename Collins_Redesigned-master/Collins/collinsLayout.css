@@ -76,6 +76,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    overflow: auto;
 }
 
 /* small shadow behind the background of the boxes */
@@ -85,6 +86,13 @@ body {
 
 #welcomeCardButton {
     text-align: center;
+}
+
+.searchBooks {
+    float: left;
+    width: 100%;
+    height: 50%;
+    padding-left: 20px;
 }
 
 /* footer */

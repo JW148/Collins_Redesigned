@@ -20,23 +20,57 @@ function FilteringBooks() {
     }
 }
 
-var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close1")[0];
+var modal1 = document.getElementById('myModal1');
+var img1 = document.getElementById('myImg1');
 
-
-var img = document.getElementById('myImg');
-
-var span = document.getElementsByClassName("close")[0];
-
-img.onclick = function() {
-    modal.style.display = "block";
+img1.onclick = function() {
+    modal1.style.display = "block";
 }
 
 span.onclick = function() {
-    modal.style.display = "none";
+    modal1.style.display = "none";
 }
 
 window.onclick = function(event) {
-    if(event.target == modal) {
-        modal.style.display = "none";
+    if(event.target == modal1) {
+        modal1.style.display = "none";
     }
 }
+
+var span = document.getElementsByClassName("close2")[0];
+var modal2 = document.getElementById('myModal2');
+var img2 = document.getElementById('myImg2');
+
+img2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+span.onclick = function() {
+    modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if(event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+var span = document.getElementsByClassName("close3")[0];
+var modal3 = document.getElementById('myModal3');
+var img3 = document.getElementById('myImg3');
+
+img3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+span.onclick = function() {
+    modal3.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if(event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+
