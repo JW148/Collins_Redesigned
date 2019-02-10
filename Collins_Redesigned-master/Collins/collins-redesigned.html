@@ -6,7 +6,6 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" type="text/css" href="collinsLayout.css" />
             <title>suzanneCollinsBooks-Redesign</title>
-            <script src="collins-javaScript.js"></script>
 </head>
 <body>
     
@@ -42,8 +41,21 @@
                 
                 
                 <div class="bookGallery">
-                    <img class="bookCover" src="images/Mockingjaycover-330.jpg">
+                    <img id="myImg" class="bookCover" src="images/Mockingjaycover-330.jpg">
                 </div>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/Mockingjaycover-330.jpg" style="max-width: 100%; height: auto">
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                </div>
+                
                     
                 <div class="bookGallery">
                     <img class="bookCover" src="images/Catching_fire_c-330.jpg">
@@ -96,6 +108,7 @@
         </div>
     </div>
     
+    <script src="collins-javaScript.js"></script>
 </body>
 
 
