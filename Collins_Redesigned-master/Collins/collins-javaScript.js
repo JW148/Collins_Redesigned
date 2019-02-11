@@ -20,9 +20,18 @@ function FilteringBooks() {
     }
 }
 
-
+//gets all the elements with the class bookCover and assigns it to the variable modalImgs
 var modalImgs = [...document.querySelectorAll(".bookCover")];
-modalImgs.forEach(function(img){
+modalImgs.forEach(function(img){    //for each modalImg...
+  img.onclick = function() {        //when it's clicked
+    var modal = img.getAttribute('data-modal');     //get the value of the data attribute. this is assigned to the correct book modal. sets it to the variable modal
+    document.getElementById(modal).style.display = "block";     //enables the correct modal
+  }
+});
+
+//does the same as above 
+var modalList = [...document.querySelectorAll(".bookList")];
+modalList.forEach(function(img){
   img.onclick = function() {
     var modal = img.getAttribute('data-modal');
     document.getElementById(modal).style.display = "block";
