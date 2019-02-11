@@ -14,7 +14,7 @@ html {
 body {
     font-family: Arial;
     margin: 20px;
-    
+    opacity: 0.95;
 }
 
 .header {
@@ -53,16 +53,22 @@ body {
     width: 75%;
 }
 
-
-
+.modalColumnLeft {
+    float: left;
+    width: 25%;
+}
 
 .columnRight {
     float: left;
     width: 25%;
-    padding-left: 20px;
-    
+    padding-left: 20px;    
 }
 
+.modalColumnRight {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+}
 
 /* clear floats after the columns so that the footer is displayed properly */
 .row:after {
@@ -81,11 +87,8 @@ body {
 
 /* small shadow behind the background of the boxes */
 .welcomeCard {
+    font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#welcomeCardButton {
-    text-align: center;
 }
 
 .searchBooks {
@@ -114,15 +117,12 @@ body {
 }
 .bookCover {
     float: left;
+    display: block;
     width: 230px; 
-    height: 300px; 
-    margin-right: 15px; 
+    height: 290px; 
+    margin-right: auto; 
+    margin-left: auto;
     border: 1px solid #ccc;
-}
-
-.websiteLink {
-    padding-top: 145px;
-   // padding-left: 450px
 }
 
 .websiteLink a{
@@ -156,10 +156,9 @@ img.bookGallery img {
 }
 
 #myBooks {
-  background-image: url("images/searchIcon.png");
-  background-position: 10px 10px;
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
   background-repeat: no-repeat;
-  background-size: 25px;
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
@@ -188,6 +187,17 @@ img.bookGallery img {
   background-color: #eee;
 }
 
+img.modalBook {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-right: 20px;
+}
+
+.bookInfo {
+    font-size: 20px;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -207,6 +217,7 @@ img.bookGallery img {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    overflow: auto;
 }
 
 .close {
